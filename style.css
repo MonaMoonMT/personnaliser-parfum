@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-family: 'Overpass';
+    text-align: center;
+    background-color: black;
+  }
+  
+.container {
+    padding: 50px 0;
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: black;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.header img{
+    height: 50px;
+  }
+
+ #banner{
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    width: 100%;
+    padding-top: 0;
+    box-shadow: inset 0 0 0 1000px rgba(28, 28, 28, 0.5);
+    color: white;
+ }
+  
+ h1{
+    padding-top: 150px;
+    text-shadow:0 0.5px 0 white, 0.5px -0.5px 0 white;
+    color: black;
+ }
+
+ .fourcards-inline{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 50px;
+ }
+
+ .fourcards-inline img{
+    height: 150px;
+ }
+
+.nom-etape{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.fourcards{
+    transition: 0.3s;
+    font-size: 15px;
+    border: 1px solid #aa8712;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(244, 164, 2, 0.5);
+}
+
+.fourcards:hover{
+    transform: scale(1.1);
+}
+
+#btn-etapes{
+    background-image: linear-gradient(120deg, #ffdb79 0%, #f1960c 100%);
+    color: white ;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+h2{
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+ .twocards-inline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    margin-top: 80px;
+    transition: 0.3s;
+    border: 1px solid #aa8712;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(244, 164, 2, 0.5);
+    padding: 30px 0;
+ }
+
+ .twocards-inline:hover{
+    transform: scale(1.1);
+}
+
+ .twocards-inline img{
+    height: 350px;
+    border-radius: 15px;
+ }
+
+.twocards p{
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.btn-twocards{
+    background-image: linear-gradient(120deg, #ffdb79 0%, #f1960c 100%);
+    color: white ;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-twocards:hover{
+    zoom: 110%;
+}
+
+#video{
+   margin-top: 50px;
+}
+
+#video a{
+    line-height: 5;
+    color: white;
+    font-weight: bolder;
+}
+
+.footer{
+    background-image: url(images/footer.jpeg);   
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    color: black;
+}
+
+.footer p{
+    font-size: 12px;
+}
+
+#btn-newsletter{
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+    background-color: black;
+    padding: 10px 30px;
+    font-size: 15px;
+}
+
+@media (max-width:960px){
+    .container{width: 900px}
+    .fourcards-inline{grid-template-columns: 1fr 1fr 1fr 1fr;}
+    .twocards-inline{grid-template-columns: 1fr 1fr;}
+}
+
+@media (max-width:720px){
+    .container{width: 680px}
+    .fourcards-inline{grid-template-columns: 1fr 1fr;}
+    .twocards-inline{grid-template-columns: 1fr;}
+}
+
+@media (max-width:540px){
+    .container{width: 480x}
+    .fourcards-inline{grid-template-columns: 1fr 1fr;}
+    .twocards-inline{grid-template-columns: 1fr;}
+}
